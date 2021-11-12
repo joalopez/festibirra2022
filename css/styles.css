@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;600;800&display=swap');
 /*!
 * Start Bootstrap - Full Width Pics v5.0.4 (https://startbootstrap.com/template/full-width-pics)
 * Copyright 2013-2021 Start Bootstrap
@@ -128,6 +128,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  font-weight: 600;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
