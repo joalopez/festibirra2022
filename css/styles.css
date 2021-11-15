@@ -11390,13 +11390,49 @@ nav > div > div > ul > li > a.current_page_item{
 }
 
 #festival{
+  position: relative;
+}
+
+#festival::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: linear-gradient(to top, #fff, #ffffff96), url("/assets/images/bg_festival.jpg");
   background-position: top left, center center;
   background-size: auto, cover;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  z-index: -1;
 }
 
-.card-festival{
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.15);
+span.lupulo {
+  background: url('/assets/images/lupulo.svg');
+  background-repeat: no-repeat;
+  height:38px;
+  width:190px;
+  display: block;
+}
+
+h2.lupulo::before {
+  background: url('/assets/images/lupulo.svg');
+  background-repeat: no-repeat;
+  height:38px;
+  width:38px;
+  display: block;
+  content: "";
+    float: left;
+  margin: 10px 6px 0 0;
+}
+
+@media screen and (max-width: 479px){
+  h2.lupulo::before {
+    background: url('/assets/images/lupulo.svg');
+    background-repeat: no-repeat;
+    height:38px;
+    width:38px;
+    display: block;
+    content: "";
+      float: left;
+    margin: -5px 6px 0 0;
+  }
 }
